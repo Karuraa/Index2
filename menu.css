@@ -81,6 +81,10 @@ nav li:hover .submenu{
 	border-top: 5px solid #f1dc4f;
 	background-color: RGBa(241,211,79,0.15);
 }
+.menu-ppe:hover{
+	border-top: 5px solid #f1dc4f;
+	background-color: RGBa(140,90,167,32.15);
+}
 .menu-pf:hover{
 	border-top: 5px solid #f1dc4f;
 	background-color: RGBa(4,8,167,0.15);
@@ -103,6 +107,9 @@ nav > ul > li:hover a{
 .menu-js .submenu{
 	background-color: RGB(251,216,99);
 }
+.menu-ppe .submenu{
+	background-color: RGB(24,188,222);
+}
 .submenu li:hover a{
 	color: #EEE;
 	font-weight: bold;
@@ -116,6 +123,9 @@ nav > ul > li:hover a{
 }
 .menu-js .submenu li:hover{
 	background-color: rgb(200, 165, 75);
+}
+.menu-ppe .submenu li:hover{
+	background-color: rgb(185, 218, 75);
 }
 nav input[type=checkbox]:checked~ ul{
 	display: block;
