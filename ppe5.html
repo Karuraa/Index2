@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="ppe5.css">
+	<meta charset="utf-8">
+	<title>PPE 5</title>
+
+<script type="text/javascript">
+var result = 0
+function valider(){
+	if (r3.checked == 1 && r5.checked == 1 && r10.checked == 1 && r12.checked ==1){
+		alert("QCM validé")
+	}else{ 
+		alert("Une ou plusieurs mauvaises réponses")
+	}
+}
+function correct1() {
+  document.getElementById("q1").innerHTML = "Bonne réponses";
+}
+function incorrect1(){
+ document.getElementById("q1").innerHTML = "Mauvaise réponse";
+}
+function correct2() {
+  document.getElementById("q2").innerHTML = "Bonne réponse";
+}
+function incorrect2(){
+ document.getElementById("q2").innerHTML = "Mauvaise réponse";
+}
+function correct3() {
+  document.getElementById("q3").innerHTML = "Bonne réponses";
+}
+function incorrect3(){
+ document.getElementById("q3").innerHTML = "Mauvaise réponse";
+}
+</script>
+
+</head>
+<body>
+<header><p class="info">BTS SIO Lycée Parc de Vilgénis</p></header>
+<p class="infosupp"><i>Questionnaire sous forme de QCM. Les questions peuvent comporter une ou plusieus bonnes réponses</i></p>
+<!--Question 1--> 
+<div class="q1">
+<form>
+<b>Question 1 :</b><br>
+De quelle couleur est la couleur rouge?
+<ul>
+	<li><input type="checkbox" id="r1" name="b1" onclick="incorrect1()">
+         <label for="b1">Bleu</label>
+    </li>
+	<li><input type="checkbox" id="r2" name="b2" onclick="incorrect1()">
+         <label for="b2">Jaune</label>
+    </li>
+	<li><input type="checkbox" id="r3" name="b3" onclick="correct1()">
+        <label for="b3">Rouge</label>
+    </li>
+	<li><input type="checkbox" id="r4" name="b4" onclick="incorrect1()">
+         <label for="b4">Vert</label>
+    </li>
+</ul>
+
+</div>
+<!--Question 2--> 
+<div class="q2">
+<b>Question 2 :</b><br>
+En quelle année sommes-nous ?
+<ul>
+	<li><input type="checkbox" id="r5" name="b5" onclick="correct2()">
+         <label for="b5">2021</label>
+    </li>
+	<li><input type="checkbox" id="r6" name="b6" onclick="incorrect2()" >
+         <label for="b6">2022</label>
+     </li>
+	<li><input type="checkbox" id="r7" name="b7" onclick="incorrect2()">
+         <label for="b7">2023</label>
+     </li>
+	<li><input type="checkbox" id="r8" name="b8" onclick="incorrect2()">
+         <label for="b8">2024</label>
+     </li>
+</ul>
+
+</div>
+<!--Question 3--> 
+<div class="q3">
+<b>Question 3 :</b><br>
+Quelle est la capitale de la France
+<ul>
+	<li><input type="checkbox" id="r9" name="b9" onclick="incorrect3()">
+         <label for="b9">Toulouse</label>
+    </li>
+	<li><input type="checkbox" id="r10" name="b10" onclick="correct3()">
+         <label for="b10">Paris</label>
+     </li>
+	<li><input type="checkbox" id="r11" name="b11" onclick="incorrect3()">
+         <label for="b11">Rennes</label>
+     </li>
+	<li><input type="checkbox" id="r12" name="b12" onclick="correct3()">
+         <label for="b12">Paris</label>
+     </li>
+</ul>
+</form>
+</div>
+<form>
+<button type="submit" name="submit" value="Correction" onclick="valider()">Correction</button>
+</form>
+<form><button>Réinitialiser</button></form>
+<form  method="get" action="correction.html">
+<button>Corrigé</button>
+</form>
+<div class="dynamic">
+	<ul>
+		<li><p id="q1"></p><br></li>
+	<br>
+		<li><p id="q2"></p><br></li>
+	<br>
+		<li><p id="q3"></p><br></li>
+	</ul>
+</div>
+
+</body>
+</html>
