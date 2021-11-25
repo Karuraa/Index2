@@ -83,6 +83,7 @@ function incorrect10(){
 <header><p class="info">BTS SIO Lycée Parc de Vilgénis</p></header>
 <p class="infosupp"><i>Questionnaire sous forme de QCM. Les questions peuvent comporter une ou plusieus bonnes réponses</i></p>
 <!--Question 1--> 
+<div class="gauche">
 <div class="q1">
 <form>
 <b>Question 1 :</b><br>
@@ -101,8 +102,8 @@ De quelle couleur est la couleur rouge?
          <label for="b4">Vert</label>
     </li>
 </ul>
-
 </div>
+
 <!--Question 2--> 
 <div class="q2">
 <b>Question 2 :</b><br>
@@ -121,8 +122,8 @@ En quelle année sommes-nous ?
          <label for="b8">2024</label>
      </li>
 </ul>
-
 </div>
+
 <!--Question 3--> 
 <div class="q3">
 <b>Question 3 :</b><br>
@@ -141,6 +142,7 @@ Quelle est la capitale de la France
          <label for="b12">Paris</label>
      </li>
 </ul>
+</div>
 <div class="q4">
 <b>Question 4 :</b><br>
 Quelle est la capitale de la Chine
@@ -158,6 +160,7 @@ Quelle est la capitale de la Chine
          <label for="b12">Shenzhen</label>
      </li>
 </ul>
+</div>
 <div class="q5">
 <b>Question 5 :</b><br>
 Quelle est la capitale de l'Autriche
@@ -175,6 +178,7 @@ Quelle est la capitale de l'Autriche
          <label for="b12">Graz</label>
      </li>
 </ul>
+</div>
 <div class="q6">
 <b>Question 6 :</b><br>
 Quelle est la capitale de l'Afrique du Sud
@@ -192,6 +196,7 @@ Quelle est la capitale de l'Afrique du Sud
          <label for="b12">Pretoria</label>
      </li>
 </ul>
+</div>
 <div class="q7">
 <b>Question 7 :</b><br>
 Quelle est la capitale de la Russie
@@ -209,6 +214,7 @@ Quelle est la capitale de la Russie
          <label for="b12">Kazan</label>
      </li>
 </ul>
+</div>
 <div class="q8">
 <b>Question 8 :</b><br>
 Quelle est la capitale de l'Afghanistan
@@ -226,6 +232,7 @@ Quelle est la capitale de l'Afghanistan
          <label for="b12">Tirana</label>
      </li>
 </ul>
+</div>
 <div class="q9">
 <b>Question 9 :</b><br>
 Quelle est la capitale de l'Allemagne
@@ -243,6 +250,7 @@ Quelle est la capitale de l'Allemagne
          <label for="b12">Berlin</label>
      </li>
 </ul>
+</div>
 <div class="q10">
 <b>Question 10 :</b><br>
 Quelle est la capitale du Bangladesh
@@ -260,15 +268,10 @@ Quelle est la capitale du Bangladesh
          <label for="b12">Bridgetown</label>
      </li>
 </ul>
+</div>
 </form>
 </div>
-<form>
-<button type="submit" name="submit" value="Correction" onclick="valider()">Correction</button>
-</form>
-<form><button>Réinitialiser</button></form>
-<form  method="get" action="correction.html">
-<button>Corrigé</button>
-</form>
+</div>
 <div class="dynamic">
 	<ul>
 		<li><p id="q1">Réponse de la question 1</p></li>
@@ -292,6 +295,12 @@ Quelle est la capitale du Bangladesh
 		<li><p id="q10">Réponse de la question 10</p></li>		
 	</ul>
 </div>
-
+<div class="stop">
+<input type="button" id="corriger" value="Valider" onclick="valider()"></form>
+<form><button>Réinitialiser</button></form>
+<form  method="get" action="correction.html">
+<button>Corrigé</button>
+</div>
+</form>
 </body>
 </html>
